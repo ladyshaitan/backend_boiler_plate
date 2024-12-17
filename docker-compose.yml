@@ -9,6 +9,9 @@ services:
       - postgres
     environment:
       NODE_ENV: development
+    volumes:
+      - .:/app
+
   postgres:
     container_name: postgres
     image: postgres

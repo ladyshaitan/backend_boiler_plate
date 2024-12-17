@@ -1,10 +1,9 @@
 FROM node:slim
 
 WORKDIR /app
-COPY package.json /app/package.json
+COPY package.json .
 RUN npm install
 EXPOSE 3000
 
-COPY . /app/
-
+COPY . .
 CMD ["npm", "start"]
