@@ -9,3 +9,9 @@
 4. `docker compose up`
 
 5. `curl http://localhost:3000`
+
+## Bash into Postgres
+
+1. `docker exec -it postgres bash`
+
+2. `psql -U postgres`
