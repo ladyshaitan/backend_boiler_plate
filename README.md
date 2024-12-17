@@ -1,3 +1,5 @@
+This is a basic development environment for a typescript express server and postgres database. Has a few examples to jog your memory and establish a pattern.
+
 # Quickstart
 
 1. [Download Docker](https://docs.docker.com/get-started/get-docker/)
