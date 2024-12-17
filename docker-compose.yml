@@ -1,0 +1,19 @@
+services:
+  server:
+    container_name: server
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    environment:
+      NODE_ENV: development
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
